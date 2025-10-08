@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OI BB</title>
+</head>
+
+<body>
+
+    <div class="painel" id="painel1">
+        <div id="texto1">
+            <a id="link" href="https://drive.google.com/drive/folders/17PiT7l8Eiiloor06UmxWYKvQB-0Rw-Uj">
+              <button>Drive</button>
+            </a>
+            <h3>Saudade do que a gente nao viveu</h3>
+        </div>
+
+        <img src="Romantico.gif" alt="">
+
+        <div id="texto2">
+            <h2>Aceita namorar comigo?</h2>
+        </div>
+        <div id="botoes">
+            <table>
+                <tr>
+                    <td>
+                        <button id="sim" onclick="mostrarPainel('painel2')"> Sim! </button>
+                    </td>
+                    <td>
+                        <button onmouseover="fuja()" id="nao"> Não! </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="painel" id="painel2" style="display: none;">
+        <div id="imagem2" class="imagem-centralizada">
+            <img src="Romantico2.gif" alt="Imagem">
+        </div>
+
+        <audio id="myAudio" autoplay muted>
+            <source src="CarelessWhisper.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
